@@ -83,7 +83,7 @@ async def main():
         os.system("clear")
         await client.load_extension("jishaku")
         try:
-            await client.start("MTMzMzc3OTE4MDYxNzIwMzgyMg.GbnlZh.6gWqbM8gSQodHygZyTs8t_q-JX7ZsBcyPBeOuo")  # Replace with your actual bot token
+            await client.start("DISCORD_TOKEN")  # Replace with your actual bot token
         except Exception as e:
             print(f"Bot failed to start: {e}")
 
