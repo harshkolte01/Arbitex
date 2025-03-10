@@ -290,7 +290,7 @@ class Music(commands.Cog):
     async def connect_nodes(self) -> None:
         """Connects to Lavalink nodes."""
         try:
-            nodes = [wavelink.Node(uri="37.114.37.78:8080", password="H@rsh1to10")]
+            nodes = [wavelink.Node(uri="lavalink:8080", password="password")]
             await wavelink.Pool.connect(nodes=nodes, client=self.client, cache_capacity=None)
         except Exception:
             pass  # Prevents console spam
